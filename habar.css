@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.notification {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 140px 0;
+  margin: 0 auto;
+  background-color: #1C1C1A;
+}
+.section-div {
+  max-width: 1580px;
+  height: 494px;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+.section-div-div {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.text-5 {
+  font-family: Space Grotesk;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #caf231;
+}
+.text-6 {
+  font-family: Archivo Narrow;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -1.28px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #f4f2ed;
+}
+.text-7 {
+  font-family: Archivo Narrow;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.64px;
+  vertical-align: middle;
+  color: #b6b4ba;
+}
+.soatlar {
+  height: 104px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.soat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.raqam {
+  font-family: Archivo Narrow;
+  font-weight: 800;
+  font-style: Bold;
+  font-size: 64px;
+  line-height: 60px;
+  letter-spacing: -1.28px;
+  vertical-align: middle;
+  color: #f4f2ed;
+}
+.kun {
+  font-family: Space Grotesk;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  vertical-align: middle;
+  color: #c5c9ae;
+}
+.buyurtma-btn {
+  width: 240px;
+  height: 52px;
+  border: none;
+  font-weight: bold;
+  border-radius: 50px;
+  font-family: Space Grotesk;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.7px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #171e00;
+  background-color: #d6ff3f;
+  cursor: pointer;
+}
+.kross {
+  width: 633px;
+  height: 770px;
+}
