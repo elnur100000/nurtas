@@ -13,9 +13,37 @@
     <link rel="stylesheet" href="./dokon.css" />
   </head>
   <body>
+    <input type="radio" name="cat" id="cat-all" class="filter-radio" checked />
+    <input type="radio" name="cat" id="cat-running" class="filter-radio" />
+    <input type="radio" name="cat" id="cat-lifestyle" class="filter-radio" />
+    <input type="radio" name="cat" id="cat-basketball" class="filter-radio" />
+    <input type="radio" name="cat" id="cat-football" class="filter-radio" />
+    <input type="radio" name="cat" id="cat-skate" class="filter-radio" />
+    <input type="radio" name="cat" id="cat-limited" class="filter-radio" />
+
+    <input type="checkbox" id="brand-nike" class="filter-radio" checked />
+    <input type="checkbox" id="brand-jordan" class="filter-radio" checked />
+    <input type="checkbox" id="brand-adidas" class="filter-radio" checked />
+    <input type="checkbox" id="brand-nb" class="filter-radio" checked />
+
+    <input
+      type="radio"
+      name="size"
+      id="size-all"
+      class="filter-radio"
+      checked
+    />
+    <input type="radio" name="size" id="size-38" class="filter-radio" />
+    <input type="radio" name="size" id="size-39" class="filter-radio" />
+    <input type="radio" name="size" id="size-40" class="filter-radio" />
+    <input type="radio" name="size" id="size-41" class="filter-radio" />
+    <input type="radio" name="size" id="size-42" class="filter-radio" />
+    <input type="radio" name="size" id="size-43" class="filter-radio" />
+
+    <input type="checkbox" id="menu" class="menu-toggle" />
+
     <header>
       <div class="container">
-        <input type="checkbox" id="menu" class="menu-toggle" />
         <label for="menu" class="menu-icon">☰</label>
         <div class="overlay"></div>
         <aside class="sidebar">
@@ -42,13 +70,45 @@
         </ul>
         <div class="content">
           <div class="content-icon-btn">
-            <img src="./images/Button.svg" alt="Search" />
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
           </div>
           <div class="content-icon-btn">
-            <img src="./images/Button (1).svg" alt="Wishlist" />
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              />
+            </svg>
           </div>
           <div class="content-icon-btn">
-            <img src="./images/Containerr.svg" alt="Cart" />
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
           </div>
           <a href="./login.html" class="header-btn">KIRISH</a>
         </div>
@@ -65,13 +125,25 @@
           <span class="sahifa-barcha-text-span">(248 TA MAHSULOT)</span>
         </h2>
         <div class="divs">
-          <div class="filter-chip active-chip">Hammasi</div>
-          <div class="filter-chip">Yugurish</div>
-          <div class="filter-chip">Lifestyle</div>
-          <div class="filter-chip">Basketbol</div>
-          <div class="filter-chip">Futbol</div>
-          <div class="filter-chip">Skeytbord</div>
-          <div class="filter-chip">Limited Edition</div>
+          <label for="cat-all" class="filter-chip chip-all">Hammasi</label>
+          <label for="cat-running" class="filter-chip chip-running"
+            >Yugurish</label
+          >
+          <label for="cat-lifestyle" class="filter-chip chip-lifestyle"
+            >Lifestyle</label
+          >
+          <label for="cat-basketball" class="filter-chip chip-basketball"
+            >Basketbol</label
+          >
+          <label for="cat-football" class="filter-chip chip-football"
+            >Futbol</label
+          >
+          <label for="cat-skate" class="filter-chip chip-skate"
+            >Skeytbord</label
+          >
+          <label for="cat-limited" class="filter-chip chip-limited"
+            >Limited Edition</label
+          >
         </div>
       </section>
 
@@ -80,27 +152,22 @@
           <div class="brend">
             <div class="brend-div">
               <h3 class="brend-text">BREND</h3>
-              <img
-                src="./images/Container.svg"
-                alt="arrow"
-                class="brend-strelka"
-              />
             </div>
             <div class="input-divs">
-              <label class="input-div">
-                <input type="checkbox" class="inpt" checked />
+              <label for="brand-nike" class="input-div">
+                <span class="custom-cb"></span>
                 <span class="text-1">Nike</span>
               </label>
-              <label class="input-div">
-                <input type="checkbox" class="inpt" />
+              <label for="brand-jordan" class="input-div">
+                <span class="custom-cb"></span>
                 <span class="text-1">Jordan</span>
               </label>
-              <label class="input-div">
-                <input type="checkbox" class="inpt" />
+              <label for="brand-adidas" class="input-div">
+                <span class="custom-cb"></span>
                 <span class="text-1">Adidas</span>
               </label>
-              <label class="input-div">
-                <input type="checkbox" class="inpt" />
+              <label for="brand-nb" class="input-div">
+                <span class="custom-cb"></span>
                 <span class="text-1">New Balance</span>
               </label>
             </div>
@@ -109,33 +176,28 @@
           <div class="olcham">
             <div class="brend-div">
               <h3 class="brend-text">O'LCHAM</h3>
-              <img
-                src="./images/Container.svg"
-                alt="arrow"
-                class="brend-strelka"
-              />
             </div>
             <div class="numbers">
-              <div class="number">38</div>
-              <div class="number">39</div>
-              <div class="number active-size">40</div>
-              <div class="number">41</div>
-              <div class="number">42</div>
-              <div class="number">43</div>
+              <label for="size-38" class="number lbl-38">38</label>
+              <label for="size-39" class="number lbl-39">39</label>
+              <label for="size-40" class="number lbl-40">40</label>
+              <label for="size-41" class="number lbl-41">41</label>
+              <label for="size-42" class="number lbl-42">42</label>
+              <label for="size-43" class="number lbl-43">43</label>
             </div>
           </div>
 
           <div class="narx">
             <div class="brend-div">
               <h3 class="brend-text">NARX</h3>
-              <img
-                src="./images/Container.svg"
-                alt="arrow"
-                class="brend-strelka"
-              />
             </div>
             <div class="inpts">
-              <input type="text" class="number-inpt" value="500 000 so'm" />
+              <input
+                type="text"
+                class="number-inpt"
+                value="500 000 - 5 000 000 so'm"
+                readonly
+              />
               <div class="som-som">
                 <span class="som">500k so'm</span>
                 <span class="som">5m so'm</span>
@@ -144,50 +206,42 @@
           </div>
 
           <div class="buttons">
-            <a href="./dokon-stil.html"
-              ><button class="btn-filter">FILTRNI QO'LLASH</button></a
+            <a href="./dokon-stil.html" class="filter-a"
+              ><button for="cat-all" class="btn-filter">
+                FILTRNI QO'LLASH
+              </button></a
             >
-            <h2 class="toz">TOZALASH</h2>
+            <label for="cat-all" class="toz-reset">
+              <label for="size-all" class="toz-reset-inner">TOZALASH</label>
+            </label>
           </div>
         </aside>
 
         <div class="content-wrapper">
           <div class="tanlash">
             <div class="tanlash-cards">
-              <button class="nike-button">
-                NIKE <img src="./images/iks (2).svg" alt="x" />
-              </button>
-              <button class="nike-button">
-                40 O'LCHAM <img src="./images/iks (2).svg" alt="x" />
-              </button>
+              <label for="brand-nike" class="nike-button"> NIKE &times; </label>
+              <label for="size-all" class="nike-button">
+                O'LCHAM SROSI &times;
+              </label>
             </div>
 
             <div class="saralash">
               <div class="filter-container-custom">
                 <span class="filter-label">SARALASH:</span>
                 <span class="filter-selected">Eng yangilar</span>
-                <img
-                  src="./images/image.svg"
-                  alt="arrow"
-                  class="select-arrow"
-                />
-              </div>
-              <div class="view-options">
-                <button class="view-btn active-view">
-                  <img src="./images/kv.svg" alt="Grid" />
-                </button>
-                <button class="view-btn">
-                  <img src="./images/kv-1.svg" alt="List" />
-                </button>
               </div>
             </div>
           </div>
 
           <div class="catalog-grid">
-            <div class="product-item">
+            <div
+              class="product-item brand-nike cat-running cat-lifestyle size-40 size-41"
+            >
               <div class="card-header">
                 <span class="badge badge--lime">TREND</span>
-                <button class="wishlist-btn"></button>
+                <input type="checkbox" id="fav-1" class="fav-check" />
+                <label for="fav-1" class="wishlist-btn"></label>
                 <div class="image-holder">
                   <img
                     class="imgg"
@@ -205,10 +259,13 @@
               </div>
             </div>
 
-            <div class="product-item">
+            <div
+              class="product-item brand-adidas cat-lifestyle size-38 size-39 size-42"
+            >
               <div class="card-header">
                 <span class="badge badge--pink">NEW</span>
-                <button class="wishlist-btn"></button>
+                <input type="checkbox" id="fav-2" class="fav-check" />
+                <label for="fav-2" class="wishlist-btn"></label>
                 <div class="image-holder">
                   <img
                     class="imgg"
@@ -226,10 +283,13 @@
               </div>
             </div>
 
-            <div class="product-item">
+            <div
+              class="product-item brand-nb cat-limited cat-lifestyle size-41 size-42 size-43"
+            >
               <div class="card-header">
                 <span class="badge badge--white">LIMITED</span>
-                <button class="wishlist-btn"></button>
+                <input type="checkbox" id="fav-3" class="fav-check" />
+                <label for="fav-3" class="wishlist-btn"></label>
                 <div class="image-holder">
                   <img
                     class="imgg"
@@ -247,9 +307,13 @@
               </div>
             </div>
 
-            <div class="product-item">
+            <div
+              class="product-item brand-jordan cat-basketball size-40 size-42"
+            >
               <div class="card-header">
-                <button class="wishlist-btn"></button>
+                <span class="badge badge--lime">HOT</span>
+                <input type="checkbox" id="fav-4" class="fav-check" />
+                <label for="fav-4" class="wishlist-btn"></label>
                 <div class="image-holder">
                   <img
                     class="imgg"
@@ -259,17 +323,21 @@
                 </div>
               </div>
               <div class="card-body">
-                <span class="brand-name">NIKE</span>
+                <span class="brand-name">JORDAN</span>
                 <h3 class="product-title">Air Jordan 1 High OG</h3>
                 <div class="price-group">
-                  <span class="price-now">1,500,000 so'm</span>
+                  <span class="price-now">1 500 000 so'm</span>
                 </div>
               </div>
             </div>
 
-            <div class="product-item">
+            <div
+              class="product-item brand-adidas cat-lifestyle size-39 size-40 size-43"
+            >
               <div class="card-header">
-                <button class="wishlist-btn"></button>
+                <span class="badge badge--pink">POPULAR</span>
+                <input type="checkbox" id="fav-5" class="fav-check" />
+                <label for="fav-5" class="wishlist-btn"></label>
                 <div class="image-holder">
                   <img
                     class="imgg"
@@ -279,17 +347,21 @@
                 </div>
               </div>
               <div class="card-body">
-                <span class="brand-name">JORDAN</span>
+                <span class="brand-name">ADIDAS / YEEZY</span>
                 <h3 class="product-title">Yeezy Boost 350 V2</h3>
                 <div class="price-group">
-                  <span class="price-now">1,600,000 so'm</span>
+                  <span class="price-now">1 600 000 so'm</span>
                 </div>
               </div>
             </div>
 
-            <div class="product-item">
+            <div
+              class="product-item brand-nike cat-running size-38 size-40 size-41"
+            >
               <div class="card-header">
-                <button class="wishlist-btn"></button>
+                <span class="badge badge--white">SPECIAL</span>
+                <input type="checkbox" id="fav-6" class="fav-check" />
+                <label for="fav-6" class="wishlist-btn"></label>
                 <div class="image-holder">
                   <img
                     class="imgg"
@@ -299,10 +371,80 @@
                 </div>
               </div>
               <div class="card-body">
-                <span class="brand-name">YEEZY</span>
-                <h3 class="product-title">ASICS Gel-Kayano 14</h3>
+                <span class="brand-name">NIKE RUNNING</span>
+                <h3 class="product-title">Nike Pegasus Trail 4</h3>
                 <div class="price-group">
-                  <span class="price-now">1,700,000 so'm</span>
+                  <span class="price-now">1 350 000 so'm</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item brand-nike cat-football size-39 size-42">
+              <div class="card-header">
+                <span class="badge badge--lime">NEW</span>
+                <input type="checkbox" id="fav-7" class="fav-check" />
+                <label for="fav-7" class="wishlist-btn"></label>
+                <div class="image-holder">
+                  <img
+                    class="imgg"
+                    src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=600&q=80"
+                    alt="Nike Mercurial"
+                  />
+                </div>
+              </div>
+              <div class="card-body">
+                <span class="brand-name">NIKE FOOTBALL</span>
+                <h3 class="product-title">Nike Vapor 15 Elite</h3>
+                <div class="price-group">
+                  <span class="price-now">1 800 000 so'm</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-item brand-nike cat-skate size-40 size-41 size-42"
+            >
+              <div class="card-header">
+                <span class="badge badge--pink">SALE</span>
+                <input type="checkbox" id="fav-8" class="fav-check" />
+                <label for="fav-8" class="wishlist-btn"></label>
+                <div class="image-holder">
+                  <img
+                    class="imgg"
+                    src="https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?auto=format&fit=crop&w=600&q=80"
+                    alt="Nike SB Dunk"
+                  />
+                </div>
+              </div>
+              <div class="card-body">
+                <span class="brand-name">NIKE SB</span>
+                <h3 class="product-title">Nike SB Dunk Low Pro</h3>
+                <div class="price-group">
+                  <span class="price-now">1 100 000 so'm</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-item brand-nb cat-running cat-lifestyle size-38 size-42 size-43"
+            >
+              <div class="card-header">
+                <span class="badge badge--white">EXCLUSIVE</span>
+                <input type="checkbox" id="fav-9" class="fav-check" />
+                <label for="fav-9" class="wishlist-btn"></label>
+                <div class="image-holder">
+                  <img
+                    class="imgg"
+                    src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=600&q=80"
+                    alt="NB 990v5"
+                  />
+                </div>
+              </div>
+              <div class="card-body">
+                <span class="brand-name">NEW BALANCE</span>
+                <h3 class="product-title">NB Made in USA 990v5</h3>
+                <div class="price-group">
+                  <span class="price-now">2 400 000 so'm</span>
                 </div>
               </div>
             </div>
@@ -339,7 +481,16 @@
             </p>
             <div class="original-div">
               <h3 class="original-text-2">BATAFSIL O'QISH</h3>
-              <img src="./images/strelka-2.svg" alt="arrow" />
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
             </div>
           </div>
           <div class="mijozlar">
@@ -363,6 +514,7 @@
         </div>
       </section>
     </main>
+
     <footer>
       <div class="footer-cards">
         <div class="cards-card">
@@ -372,33 +524,27 @@
             etuvchi platforma.
           </p>
           <div class="fb-ig-tg">
-            <div class="fb">
-              <h3>FB</h3>
-            </div>
-            <div class="fb">
-              <h3>IG</h3>
-            </div>
-            <div class="fb">
-              <h3>TG</h3>
-            </div>
+            <a href="#" class="fb"><h3>FB</h3></a>
+            <a href="#" class="fb"><h3>IG</h3></a>
+            <a href="#" class="fb"><h3>TG</h3></a>
           </div>
         </div>
         <div class="cards-card">
           <h3 class="card-dokon">DO'KON</h3>
           <div class="cards-card-texts">
-            <p class="text-p">Barcha krossovkalar</p>
-            <p class="text-p">Yangi kolleksiya</p>
-            <p class="text-p">Chegirmalar</p>
-            <p class="text-p">Aksessuarlar</p>
+            <a href="#" class="text-p">Barcha krossovkalar</a>
+            <a href="#" class="text-p">Yangi kolleksiya</a>
+            <a href="#" class="text-p">Chegirmalar</a>
+            <a href="#" class="text-p">Aksessuarlar</a>
           </div>
         </div>
         <div class="cards-card">
           <h3 class="card-dokon">KOMPANIYA</h3>
           <div class="cards-card-texts">
-            <p class="text-p">Biz haqimizda</p>
-            <p class="text-p">Bog'lanish</p>
-            <p class="text-p">Vakansiyalar</p>
-            <p class="text-p">Do'konlarimiz</p>
+            <a href="./biz-haqimizda.html" class="text-p">Biz haqimizda</a>
+            <a href="./aloqa.html" class="text-p">Bog'lanish</a>
+            <a href="#" class="text-p">Vakansiyalar</a>
+            <a href="#" class="text-p">Do'konlarimiz</a>
           </div>
         </div>
         <div class="cards-card">
@@ -415,15 +561,28 @@
               placeholder="Email manzilingiz"
               class="inpt-2"
             />
-            <img src="./images/strelka.svg" alt="" class="input-img" />
+            <button type="button" class="input-img-btn">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
       <div class="random-texts">
-        <h3 class="barcha">© 2024 KROSSDROP. Barcha huquqlar himoyalangan.</h3>
+        <h3 class="barcha">
+          &copy; 2026 KROSSDROP. Barcha huquqlar himoyalangan.
+        </h3>
         <div class="siyosati">
-          <h3 class="siyosati-text-1">Maxfiylik siyosati</h3>
-          <h3 class="siyosati-text-2">Foydalanish shartlari</h3>
+          <a href="#" class="siyosati-text-1">Maxfiylik siyosati</a>
+          <a href="#" class="siyosati-text-2">Foydalanish shartlari</a>
         </div>
       </div>
     </footer>

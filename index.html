@@ -1,657 +1,436 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="uz">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Figma</title>
+    <title>KROSSDROP | Exclusive Sneaker Store</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+    
     <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
+    <!-- Navbar / Header -->
     <header class="header">
-      <div class="container">
+      <div class="nav-container">
         <input type="checkbox" id="menu" class="menu-toggle" />
-        <label for="menu" class="menu-icon">☰</label>
-        <div class="overlay"></div>
+        <label for="menu" class="menu-icon" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        
+        <label for="menu" class="overlay"></label>
+        
         <aside class="sidebar">
           <div class="sidebar-header">
-            <h2>KROSSDROP.</h2>
+            <a href="#" class="brand-logo">KROSSDROP<span>.</span></a>
             <label for="menu" class="close-btn">&times;</label>
           </div>
 
-          <nav>
-            <a href="#" class="active">Bosh sahifa</a>
-            <a href="./dokon.html" class="active-a">Do'kon</a>
-            <a href="#" class="active-a">Yangi kelganlar</a>
-            <a href="./biz-haqimizda.html" class="active-a">Biz haqimizda</a>
-            <a href="./aloqa.html" class="active-a">Aloqa</a>
+          <nav class="sidebar-nav">
+            <a href="#" class="nav-link active">Bosh sahifa</a>
+            <a href="./dokon.html" class="nav-link">Do'kon</a>
+            <a href="#" class="nav-link">Yangi kelganlar</a>
+            <a href="./biz-haqimizda.html" class="nav-link">Biz haqimizda</a>
+            <a href="./aloqa.html" class="nav-link">Aloqa</a>
           </nav>
 
-          <a href="./login.html" class="login-btn">KIRISH</a>
+          <a href="./login.html" class="login-btn sidebar-login">KIRISH</a>
         </aside>
-        <h1 class="text">KROSSDROP.</h1>
-        <ul class="links">
-          <a href="#" class="sahifa-a"><li class="link">Bosh sahifa</li></a>
-          <a href="./dokon.html" class="links-a"
-            ><li class="link">Do'kon</li></a
-          >
-          <li class="link">Yangi kelganlar</li>
-          <a href="./biz-haqimizda.html" class="links-a"
-            ><li class="link" class="links-a">Biz haqimizda</li></a
-          >
-          <a href="./aloqa.html" class="links-a"><li class="link">Aloqa</li></a>
+
+        <a href="#" class="brand-logo">KROSSDROP<span>.</span></a>
+
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link active">Bosh sahifa</a></li>
+          <li><a href="./dokon.html" class="nav-link">Do'kon</a></li>
+          <li><a href="#" class="nav-link">Yangi kelganlar</a></li>
+          <li><a href="./biz-haqimizda.html" class="nav-link">Biz haqimizda</a></li>
+          <li><a href="./aloqa.html" class="nav-link">Aloqa</a></li>
         </ul>
-        <div class="content">
-          <img src="./images/Button.svg" alt="" class="img" />
-          <img src="./images/Button (1).svg" alt="" class="img-1" />
-          <img src="./images/Containerr.svg" alt="" class="img-2" />
-          <button class="btn">
-            <a href="./login.html" class="btn-a">KIRISH</a>
+
+        <div class="nav-actions">
+          <button class="icon-btn" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
           </button>
+          <button class="icon-btn cart-btn" aria-label="Shopping Cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span class="cart-badge">2</span>
+          </button>
+          <a href="./login.html" class="login-btn nav-btn">KIRISH</a>
         </div>
       </div>
-      <div class="wrapper">
-        <h1 class="text-1">BALAND QADAM TASHLA.</h1>
-        <p class="h1-p">
-          O`zbekistondagi eng ekslyuziv <br />
-          krossovkalar kolleksiyasi endi siz <br />
-          uchun ochiq.
+
+      <!-- Hero Banner -->
+      <div class="hero-content">
+        <div class="hero-tag">PREMIUM SNEAKER STORE</div>
+        <h1 class="hero-title">BALAND QADAM TASHLA.</h1>
+        <p class="hero-description">
+          O'zbekistondagi eng eksklyuziv krossovkalar kolleksiyasi endi siz uchun ochiq.
         </p>
-        <div class="som-btn">
-          <p class="text-2">1 890 000 so'm</p>
-          <a href="./login.html" class="btn-1-a">
-            <button class="btn-span">
+        <div class="hero-action-group">
+          <div class="hero-price-tag">
+            <span class="price-label">Boshlang'ich narx:</span>
+            <span class="price-val">1 890 000 so'm</span>
+          </div>
+          <div class="hero-buttons">
+            <a href="./birinchi.html" class="cta-primary">
               <span>HOZIR SOTIB OLISH</span>
-            </button>
-          </a>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#trending" class="cta-secondary">TAFSILOTLAR</a>
+          </div>
         </div>
-        <button class="btn-btn">TAFSILOTLAR</button>
       </div>
     </header>
-    <div class="boxs">
-      <div class="box">
-        <p class="text-3">NIKE</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">ADIDAS</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">NEW BALANCE</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">PUMA</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">ASICS</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">JORDAN</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">REEBOK</p>
-        <p class="text-3">NIKE</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">ADIDAS</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">NEW BALANCE</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">PUMA</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">ASICS</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">JORDAN</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">REEBOK</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">NIKE</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">ADIDAS</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">NEW BALANCE</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">PUMA</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">ASICS</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">JORDAN</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">REEBOK</p>
-        <p class="text-3">NIKE</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">ADIDAS</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">NEW BALANCE</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">PUMA</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">ASICS</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">JORDAN</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">REEBOK</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">NIKE</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">ADIDAS</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">NEW BALANCE</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">PUMA</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">ASICS</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">JORDAN</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">REEBOK</p>
-        <p class="text-3">NIKE</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">ADIDAS</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">NEW BALANCE</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">PUMA</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">ASICS</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">JORDAN</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-        <p class="text-3">REEBOK</p>
-        <img src="./images/Container (1).svg" alt="" class="img-3" />
-      </div>
 
-      <div class="box-texts">
-        <p class="text-4">NIKE</p>
-        <p class="text-4">ADIDAS</p>
-        <p class="text-4">JORDAN</p>
+    <!-- Infinite Brand Ticker -->
+    <section class="ticker-wrapper">
+      <div class="ticker-track">
+        <div class="ticker-group">
+          <span>NIKE</span><div class="dot"></div>
+          <span>ADIDAS</span><div class="dot"></div>
+          <span>JORDAN</span><div class="dot"></div>
+          <span>NEW BALANCE</span><div class="dot"></div>
+          <span>PUMA</span><div class="dot"></div>
+          <span>ASICS</span><div class="dot"></div>
+          <span>REEBOK</span><div class="dot"></div>
+        </div>
+        <div class="ticker-group" aria-hidden="true">
+          <span>NIKE</span><div class="dot"></div>
+          <span>ADIDAS</span><div class="dot"></div>
+          <span>JORDAN</span><div class="dot"></div>
+          <span>NEW BALANCE</span><div class="dot"></div>
+          <span>PUMA</span><div class="dot"></div>
+          <span>ASICS</span><div class="dot"></div>
+          <span>REEBOK</span><div class="dot"></div>
+        </div>
       </div>
-    </div>
+    </section>
+
     <main>
-      <section class="description">
-        <div class="blocks">
-          <div class="block">
-            <p class="block-text">MAHSULOTLAR</p>
-            <h1 class="block-text-text">HOZIR TRENDDA</h1>
+      <!-- Trending Products Section -->
+      <section id="trending" class="section-padding">
+        <div class="section-header">
+          <div>
+            <span class="section-subtitle">MAHSULOTLAR</span>
+            <h2 class="section-title">HOZIR TRENDDA</h2>
           </div>
-          <div class="subtitle">
-            <button class="subtitle-btn">
-              <a href="./trendda.html" class="subtitle-btn-a">Hammasi</a>
-            </button>
-            <h2 class="subtitle-text">Yugurish</h2>
-            <h2 class="subtitle-text">Lifestyle</h2>
-            <h2 class="subtitle-text">Basketbol</h2>
-            <h2 class="subtitle-text">Limited</h2>
-          </div>
-          <div class="btns">
-            <div>
-              <h1 class="block-text-text">HOZIR TRENDDA</h1>
-            </div>
-            <div class="block-btns">
-              <button class="btns-btn">Hamma krossovkalar</button>
-              <button class="btns-btn-btn">Running</button>
-            </div>
+          <div class="category-pills">
+            <button class="pill-btn active">Hammasi</button>
+            <button class="pill-btn">Yugurish</button>
+            <button class="pill-btn">Lifestyle</button>
+            <button class="pill-btn">Basketbol</button>
+            <button class="pill-btn">Limited</button>
           </div>
         </div>
-        <div class="cards">
-          <div class="card">
-            <img src="./images/Sneaker-1.png" alt="" class="sneeker" />
-            <div>
-              <h2 class="air-text">Nike Air Max Dn</h2>
-              <h3 class="nike-text">Lifestyle• Unisex</h3>
-              <h2 class="price">1 650 000 so'm</h2>
+
+        <div class="products-grid">
+          <article class="product-card">
+            <div class="product-image-box">
+              <span class="badge-tag">NEW</span>
+              <img src="./images/Sneaker-1.png" alt="Nike Air Max Dn" class="product-img" />
             </div>
-          </div>
-          <div class="card">
-            <img src="./images/Sneaker-2.png" alt="" class="sneeker" />
-            <h2 class="air-text">Adidas Ultraboost Light</h2>
-            <h3 class="nike-text">Running • Men</h3>
-            <h2 class="price">2 100 000 so'm</h2>
-          </div>
-          <div class="card">
-            <img src="./images/Sneaker-3.png" alt="" class="sneeker" />
-            <h2 class="air-text">New Balance 990v6</h2>
-            <h3 class="nike-text">Heritage • Grey</h3>
-            <h2 class="price">1 920 000 so'm</h2>
-          </div>
-          <div class="card">
-            <img src="./images/Sneaker-4.png" alt="" class="sneeker" />
-            <h2 class="air-text">Air Jordan 4 Retro</h2>
-            <h3 class="nike-text">Basketball • Thunder</h3>
-            <h2 class="price">3 200 000 so'm</h2>
-          </div>
+            <div class="product-info">
+              <span class="product-cat">Lifestyle • Unisex</span>
+              <h3 class="product-name">Nike Air Max Dn</h3>
+              <div class="product-bottom">
+                <span class="product-price">1 650 000 so'm</span>
+                <button class="add-cart-btn" aria-label="Add to Cart">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-box">
+              <img src="./images/Sneaker-2.png" alt="Adidas Ultraboost Light" class="product-img" />
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Running • Men</span>
+              <h3 class="product-name">Adidas Ultraboost Light</h3>
+              <div class="product-bottom">
+                <span class="product-price">2 100 000 so'm</span>
+                <button class="add-cart-btn" aria-label="Add to Cart">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-box">
+              <img src="./images/Sneaker-3.png" alt="New Balance 990v6" class="product-img" />
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Heritage • Grey</span>
+              <h3 class="product-name">New Balance 990v6</h3>
+              <div class="product-bottom">
+                <span class="product-price">1 920 000 so'm</span>
+                <button class="add-cart-btn" aria-label="Add to Cart">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-box">
+              <span class="badge-tag hot">HOT DROP</span>
+              <img src="./images/Sneaker-4.png" alt="Air Jordan 4 Retro" class="product-img" />
+            </div>
+            <div class="product-info">
+              <span class="product-cat">Basketball • Thunder</span>
+              <h3 class="product-name">Air Jordan 4 Retro</h3>
+              <div class="product-bottom">
+                <span class="product-price">3 200 000 so'm</span>
+                <button class="add-cart-btn" aria-label="Add to Cart">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                </button>
+              </div>
+            </div>
+          </article>
         </div>
-        <a href="./dokon.html" class="cards-card-btn-a"
-          ><button class="cards-card-btn">HAMMASINI KO'RISH</button></a
-        >
+
+        <div class="section-footer-cta">
+          <a href="./dokon.html" class="outline-btn">HAMMASINI KO'RISH</a>
+        </div>
       </section>
-      `
-    </main>
-    <main>
-      <section class="notification">
-        <div class="section-div">
-          <div class="section-div-div">
-            <h3 class="text-5">EKSKLUZIV DROP</h3>
-            <h1 class="text-6">JORDAN RETRO '26 <br />DARK PHANTOM</h1>
-            <p class="text-7">
-              Yangi avlod afsonasi. Klassik siluet va ultra- <br />
-              zamonaviy texnologiyalarning uyg'unligi. Faqat <br />
-              cheklangan miqdorda.
+
+      <!-- Exclusive Drop Banner with Timer -->
+      <section class="section-padding drop-banner-wrapper">
+        <div class="drop-banner">
+          <div class="drop-content">
+            <span class="drop-subtitle">EKSKLYUZIV DROP</span>
+            <h2 class="drop-title">JORDAN RETRO '26<br />DARK PHANTOM</h2>
+            <p class="drop-desc">
+              Yangi avlod afsonasi. Klassik siluet va ultra-zamonaviy texnologiyalarning uyg'unligi. Faqat cheklangan miqdorda.
             </p>
-            <div class="soatlar">
-              <div class="soat">
-                <h3 class="raqam">02</h3>
-                <h3 class="kun">KUN</h3>
+            
+            <div class="countdown-timer">
+              <div class="timer-box">
+                <span class="timer-value">02</span>
+                <span class="timer-label">KUN</span>
               </div>
-              <div class="soat">
-                <h3 class="raqam">14</h3>
-                <h3 class="kun">SOAT</h3>
+              <div class="timer-separator">:</div>
+              <div class="timer-box">
+                <span class="timer-value">14</span>
+                <span class="timer-label">SOAT</span>
               </div>
-              <div class="soat">
-                <h3 class="raqam">45</h3>
-                <h3 class="kun">DAQIQA</h3>
+              <div class="timer-separator">:</div>
+              <div class="timer-box">
+                <span class="timer-value">45</span>
+                <span class="timer-label">DAQIQA</span>
               </div>
-              <div class="soat">
-                <h3 class="raqam">12</h3>
-                <h3 class="kun">SONIYA</h3>
+              <div class="timer-separator">:</div>
+              <div class="timer-box">
+                <span class="timer-value">12</span>
+                <span class="timer-label">SONIYA</span>
               </div>
             </div>
-            <button class="buyurtma-btn">
-              <a href="./habar.html" class="buyurtma-btn-a"
-                ><img
-                  src="./images/habar.svg"
-                  alt=""
-                  class="buyurtma-img"
-                />MENGA XABAR BERING</a
-              >
-            </button>
+
+            <a href="./aloqa.html" class="cta-primary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+              <span>MENGA XABAR BERING</span>
+            </a>
           </div>
-          <img src="./images/Container (3).png" alt="" class="kross" />
-          <div class="all"></div>
-        </div>
-      </section>
-      <div class="dropps">
-        <div class="drops">
-          <img src="./images/phone.jpg" alt="" class="phone-img" />
-          <div class="drop">
-            <h3 class="text-5">EKSKLYUZIV DROP</h3>
-            <h1 class="text-8">
-              TRAVIS SCOTT <br />
-              XORDAN "CACTUS <br />
-              JACK"
-            </h1>
-            <img src="./images/time.svg" alt="" />
-            <button class="buyurtma-btn">
-              <a href="./birinchi.html" class="btn-a-a">MENGA XABAR BERING</a>
-            </button>
-          </div>
-        </div>
-      </div>
-    </main>
-    <main>
-      <section class="cards-scn">
-        <div class="cards-cards">
-          <div class="card-card">
-            <img src="./images/krosovka-1.jpg" alt="" class="img-4" />
-            <h3 class="nike-text-text">Vans Old Skool Classic</h3>
-            <h2 class="price-price">890 000 so'm</h2>
-          </div>
-          <div class="card-card">
-            <img src="./images/krosovka-2.jpg" alt="" class="img-4" />
-            <h3 class="nike-text-text">Nike Dunk Low 'Panda'</h3>
-            <h2 class="price-price">1 450 000 so'm</h2>
-          </div>
-          <div class="card-card">
-            <img src="./images/krosovka-3.jpg" alt="" class="img-4" />
-            <h3 class="nike-text-text">Adidas Forum Low</h3>
-            <h2 class="price-price">1 200 000 so'm</h2>
-          </div>
-          <div class="card-card">
-            <img src="./images/krosovka-4.jpg" alt="" class="img-4" />
-            <h3 class="nike-text-text">Converse Chuck 70</h3>
-            <h2 class="price-price">950 000 so'm</h2>
+          <div class="drop-image-wrap">
+            <img src="./images/Container (3).png" alt="Jordan Retro Dark Phantom" class="drop-img" />
           </div>
         </div>
       </section>
-    </main>
-    <main>
-      <section class="badge">
-        <div class="badge-cards-mans">
-          <div class="badge-card-man-1">
-            <div class="badge-texts">
-              <h2 class="badge-text-man">ERKAKLAR</h2>
-              <button class="badge-btn-man">
-                KO'RISH <img src="./images/strelka.svg" alt="" class="img-5" />
-              </button>
+
+      <!-- Category Spotlight -->
+      <section class="section-padding">
+        <div class="category-grid">
+          <div class="category-card cat-men">
+            <div class="cat-content">
+              <h3>ERKAKLAR</h3>
+              <a href="./dokon.html" class="cat-link">
+                KO'RISH 
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
             </div>
           </div>
-          <div class="badge-card-man-2">
-            <div class="badge-texts">
-              <h2 class="badge-text-mans">AYOLLAR</h2>
-              <button class="badge-btn-mans">
-                KO'RISH <img src="./images/strelka.svg" alt="" class="img-5" />
-              </button>
+
+          <div class="category-card cat-women">
+            <div class="cat-content">
+              <h3>AYOLLAR</h3>
+              <a href="./dokon.html" class="cat-link">
+                KO'RISH 
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
             </div>
           </div>
-          <div class="badge-card-man-3">
-            <div class="badge-texts">
-              <h2 class="badge-text-man">BOLALAR</h2>
-              <button class="badge-btn-man">
-                KO'RISH<img src="./images/strelka.svg" alt="" class="img-5" />
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="badge-cards">
-          <div class="badge-card-1">
-            <div class="badge-texts">
-              <h2 class="badge-text">ERKAKLAR</h2>
-              <button class="badge-btn"></button>
-            </div>
-          </div>
-          <div class="badge-card-2">
-            <div class="badge-texts">
-              <h2 class="badge-text">AYOLLAR</h2>
-              <button class="badge-btn"></button>
-            </div>
-          </div>
-          <div class="badge-card-3">
-            <div class="badge-texts">
-              <h2 class="badge-text">BOLALAR</h2>
-              <button class="badge-btn"></button>
+
+          <div class="category-card cat-kids">
+            <div class="cat-content">
+              <h3>BOLALAR</h3>
+              <a href="./dokon.html" class="cat-link">
+                KO'RISH 
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
             </div>
           </div>
         </div>
       </section>
-    </main>
-    <main>
-      <section class="scn">
-        <div class="scn-texts">
-          <h1 class="texts-text">
-            1000+ MODEL. <br />
-            8 BREND. <br />
-            <span class="texts-text-text">BITTA MANZIL.</span>
-          </h1>
-        </div>
-      </section>
-    </main>
-    <main>
-      <section class="cyber-perks-matrix">
-        <div class="perks-track">
-          <div class="perks-core-grid">
-            <div class="perk-holo-node">
-              <img src="./images/car-1.svg" alt="" class="perk-img" />
-              <h3 class="perk-data-box">TEZKOR YETKAZISH</h3>
-              <p class="perk-node-title">
-                O'zbekiston bo'ylab 24 soat ichida yetkazib berish.
-              </p>
+
+      <!-- Store Features / Cyber Perks Grid -->
+      <section class="section-padding features-section">
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
             </div>
-            <div class="perk-holo-node">
-              <img src="./images/car-2.svg" alt="" class="perk-img" />
-              <h3 class="perk-data-box">100% ORIGINAL</h3>
-              <p class="perk-node-title">
-                Barcha mahsulotlar sertifikatlangan va original.
-              </p>
-            </div>
-            <div class="perk-holo-node">
-              <img src="./images/car-3.svg" alt="" class="perk-img" />
-              <h3 class="perk-data-box">OSON QAYTARISH</h3>
-              <p class="perk-node-title">
-                14 kun ichida almashtirish yoki qaytarish kafolati.
-              </p>
-            </div>
-            <div class="perk-holo-node">
-              <img src="./images/car-4.svg" alt="" class="perk-img" />
-              <h3 class="perk-data-box">XAVFSIZ TO'LOV</h3>
-              <p class="perk-node-title">
-                Naqd, karta yoki muddatli to'lov imkoniyati.
-              </p>
-            </div>
+            <h3>TEZKOR YETKAZISH</h3>
+            <p>O'zbekiston bo'ylab 24 soat ichida yetkazib berish xizmati.</p>
           </div>
-          <div class="perks-core-grid" aria-hidden="true">
-            <div class="perk-holo-node">
-              <img src="./images/car-1.svg" alt="" class="perk-img" />
-              <h3 class="perk-data-box">TEZKOR YETKAZISH</h3>
-              <p class="perk-node-title">
-                O'zbekiston bo'ylab 24 soat ichida yetkazib berish.
-              </p>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             </div>
-            <div class="perk-holo-node">
-              <img src="./images/car-2.svg" alt="" class="perk-img" />
-              <h3 class="perk-data-box">100% ORIGINAL</h3>
-              <p class="perk-node-title">
-                Barcha mahsulotlar sertifikatlangan va original.
-              </p>
-            </div>
-            <div class="perk-holo-node">
-              <img src="./images/car-3.svg" alt="" class="perk-img" />
-              <h3 class="perk-data-box">OSON QAYTARISH</h3>
-              <p class="perk-node-title">
-                14 kun ichida almashtirish yoki qaytarish kafolati.
-              </p>
-            </div>
-            <div class="perk-holo-node">
-              <img src="./images/car-4.svg" alt="" class="perk-img" />
-              <h3 class="perk-data-box">XAVFSIZ TO'LOV</h3>
-              <p class="perk-node-title">
-                Naqd, karta yoki muddatli to'lov imkoniyati.
-              </p>
-            </div>
+            <h3>100% ORIGINAL</h3>
+            <p>Barcha mahsulotlar rasmiy sertifikatlangan va original.</p>
           </div>
-          <div class="perks-core-grid" aria-hidden="true">
-            <div class="perk-holo-node">
-              <img src="./images/car-1.svg" alt="" class="perk-img" />
-              <h3 class="perk-data-box">TEZKOR YETKAZISH</h3>
-              <p class="perk-node-title">
-                O'zbekiston bo'ylab 24 soat ichida yetkazib berish.
-              </p>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
             </div>
-            <div class="perk-holo-node">
-              <img src="./images/car-2.svg" alt="" class="perk-img" />
-              <h3 class="perk-data-box">100% ORIGINAL</h3>
-              <p class="perk-node-title">
-                Barcha mahsulotlar sertifikatlangan va original.
-              </p>
+            <h3>OSON QAYTARISH</h3>
+            <p>14 kun ichida almashtirish yoki to'liq qaytarish kafolati.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
             </div>
-            <div class="perk-holo-node">
-              <img src="./images/car-3.svg" alt="" class="perk-img" />
-              <h3 class="perk-data-box">OSON QAYTARISH</h3>
-              <p class="perk-node-title">
-                14 kun ichida almashtirish yoki qaytarish kafolati.
-              </p>
-            </div>
-            <div class="perk-holo-node">
-              <img src="./images/car-4.svg" alt="" class="perk-img" />
-              <h3 class="perk-data-box">XAVFSIZ TO'LOV</h3>
-              <p class="perk-node-title">
-                Naqd, karta yoki muddatli to'lov imkoniyati.
-              </p>
-            </div>
+            <h3>XAVFSIZ TO'LOV</h3>
+            <p>Naqd, bank kartasi yoki muddatli bo'lib to'lash imkoniyati.</p>
           </div>
         </div>
       </section>
-      <div class="birinchi-div">
-        <div class="birinchi-div-div">
-          <h1 class="birinchi-div-div-text">BIRINCHILARDANBO'LING</h1>
-          <p class="birinchi-div-div-p">
-            Yangi chegirmalar va drop’lar haqida eng <br />
-            birinchi bo’lib ma’lumot oling.
-          </p>
-          <input
-            type="email"
-            placeholder="Emailingizni kiriting"
-            class="birinchi-div-div-input"
-          />
-          <button class="birinchi-div-div-btn">OBUNA BO'LISH</button>
+
+      <!-- Customer Reviews Section -->
+      <section class="section-padding">
+        <div class="section-header center-header">
+          <span class="section-subtitle">MIJOZLARIMIZ FIKRI</span>
+          <h2 class="section-title">ISNINCH VA SIFAT</h2>
         </div>
-      </div>
-    </main>
-    <main>
-      <section class="mijoz-scn">
-        <div class="mijoz-texts">
-          <h3 class="mijoz-texts-h3">MIJOZLARIMIZ FIKRI</h3>
-        </div>
-        <div class="mijozlar-cards">
-          <div class="mijoz-card">
-            <img src="./images/stars.svg" alt="" />
-            <p class="mijoz-card-img-p">
-              "Krossovkalar sifati shunchaki <br />
-              daxshat! Asosiysi 100% original <br />
-              ekanligiga amin bo'ldim. Yetkazib <br />
-              berish ham juda tez bo'ldi."
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              "Krossovkalar sifati shunchaki daxshat! Asosiysi 100% original ekanligiga amin bo'ldim. Yetkazib berish ham juda tez bo'ldi."
             </p>
-            <div class="mijoz-rasm-text">
-              <img src="./images/mijoz-1.jpg" alt="" class="mijoz-img" />
-              <div class="mijoz-texts-text">
-                <h3 class="mijoz-texts-text-h3-1">Javohir R.</h3>
-                <h3 class="mijoz-texts-text-h3-2">Toshkent sh.</h3>
+            <div class="reviewer-profile">
+              <img src="./images/mijoz-1.jpg" alt="Javohir R." class="reviewer-avatar" />
+              <div>
+                <h4 class="reviewer-name">Javohir R.</h4>
+                <span class="reviewer-city">Toshkent sh.</span>
               </div>
             </div>
           </div>
 
-          <div class="mijoz-card">
-            <img src="./images/stars.svg" alt="" />
-            <p class="mijoz-card-img-p">
-              "Jordan Retro 4 oldim, kutilganidan ham chiroyli ekan. KROSSDROP
-              jamoasiga rahmat, serviz a'lo darajada!"
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              "Jordan Retro 4 oldim, kutilganidan ham chiroyli ekan. KROSSDROP jamoasiga rahmat, servis a'lo darajada!"
             </p>
-            <div class="mijoz-rasm-text">
-              <img src="./images/mijoz-2.jpg" alt="" class="mijoz-img" />
-              <div class="mijoz-texts-text">
-                <h3 class="mijoz-texts-text-h3-1">Nilufar A.</h3>
-                <h3 class="mijoz-texts-text-h3-2">Samarqand sh.</h3>
+            <div class="reviewer-profile">
+              <img src="./images/mijoz-2.jpg" alt="Nilufar A." class="reviewer-avatar" />
+              <div>
+                <h4 class="reviewer-name">Nilufar A.</h4>
+                <span class="reviewer-city">Samarqand sh.</span>
               </div>
             </div>
           </div>
 
-          <div class="mijoz-card">
-            <img src="./images/stars.svg" alt="" />
-            <p class="mijoz-card-img-p">
-              "Haqiqiy original brendlar qidirayotgan bo'lsangiz, faqat shu
-              yerga keling. Men doimiy mijozga aylendim."
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              "Haqiqiy original brendlar qidirayotgan bo'lsangiz, faqat shu yerga keling. Men doimiy mijozga aylendim."
             </p>
-            <div class="mijoz-rasm-text">
-              <img src="./images/mijoz-3.jpg" alt="" class="mijoz-img" />
-              <div class="mijoz-texts-text">
-                <h3 class="mijoz-texts-text-h3-1">Bekzod K.</h3>
-                <h3 class="mijoz-texts-text-h3-2">Buxoro sh.</h3>
+            <div class="reviewer-profile">
+              <img src="./images/mijoz-3.jpg" alt="Bekzod K." class="reviewer-avatar" />
+              <div>
+                <h4 class="reviewer-name">Bekzod K.</h4>
+                <span class="reviewer-city">Buxoro sh.</span>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </main>
-    <main>
-      <section class="running">
-        <div class="running-texts">
-          <h2 class="running-texts-text-1">@KROSSDROP</h2>
-          <h2 class="running-texts-text-2">INSTAGRAMDA BIZNI KUZATING</h2>
-        </div>
-        <div class="running-cards">
-          <div class="running-card">
-            <img src="./images/running-1.png" alt="" class="running-img" />
+
+      <!-- Newsletter Subscription Card -->
+      <section class="section-padding">
+        <div class="newsletter-card">
+          <div class="newsletter-info">
+            <h2>BIRINCHILARDAN BO'LING</h2>
+            <p>Yangi chegirmalar va eksklyuziv drop'lar haqida eng birinchi bo'lib ma'lumot oling.</p>
           </div>
-          <div class="running-card">
-            <img src="./images/running-2.png" alt="" class="running-img" />
-          </div>
-          <div class="running-card">
-            <img src="./images/running-3.png" alt="" class="running-img" />
-          </div>
-          <div class="running-card">
-            <img src="./images/running-4.png" alt="" class="running-img" />
-          </div>
-          <div class="running-card">
-            <img src="./images/running-5.png" alt="" class="running-img" />
-          </div>
-          <div class="running-card">
-            <img src="./images/running-6.png" alt="" class="running-img" />
-          </div>
+          <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Emailingizni kiriting" required class="newsletter-input" />
+            <button type="submit" class="cta-primary">OBUNA BO'LISH</button>
+          </form>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer-cards">
-        <div class="footer-card">
-          <h2 class="footer-card-text-1">KROSSDROP.</h2>
-          <p class="premium">
-            Premium krossovkalar olami. Biz sizga <br />
-            faqatgina eng yaxshisini ilinamiz.
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <a href="#" class="brand-logo">KROSSDROP<span>.</span></a>
+          <p class="footer-desc">
+            O'zbekistondagi eng premium krossovkalar do'koni. Faqat original va eksklyuziv modellar.
           </p>
-          <p class="footer-card-text-2">
-            O'zbekistondagi eng premium krossovkalar do'koni. Faqat original va
-            eksklyuziv modellar.
-          </p>
-          <div class="FB-IG-TG">
-            <div class="FB">
-              <h3 class="FB-text">FB</h3>
-            </div>
-            <div class="FB">
-              <h3 class="FB-text">IG</h3>
-            </div>
-            <div class="FB">
-              <h3 class="FB-text">TG</h3>
-            </div>
+          <div class="social-links">
+            <a href="#" class="social-icon">FB</a>
+            <a href="#" class="social-icon">IG</a>
+            <a href="#" class="social-icon">TG</a>
           </div>
         </div>
-        <div class="dokon-card">
-          <div class="dokon-texts">
-            <h2 class="footer-card-text-1">DO'KON</h2>
-            <p class="footer-card-text-3">Yugurish poyabzallari</p>
-            <p class="footer-card-text-3">Lifestyle modellar</p>
-            <p class="footer-card-text-3">Basketbol kolleksiyasi</p>
-            <p class="footer-card-text-3">Cheklangan nashrlar</p>
-          </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">DO'KON</h4>
+          <ul class="footer-links">
+            <li><a href="#">Yugurish poyabzallari</a></li>
+            <li><a href="#">Lifestyle modellar</a></li>
+            <li><a href="#">Basketbol kolleksiyasi</a></li>
+            <li><a href="#">Cheklangan nashrlar</a></li>
+          </ul>
         </div>
-        <div class="yordam-card">
-          <div class="yordam-texts">
-            <h2 class="footer-card-text-1">YORDAM</h2>
-            <p class="footer-card-text-3">Yetkazib berish</p>
-            <p class="footer-card-text-3">Qaytarish va almashtirish</p>
-            <p class="footer-card-text-3">To'lov usullari</p>
-            <p class="footer-card-text-3">Tez-tez beriladigan savollar</p>
-          </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">YORDAM</h4>
+          <ul class="footer-links">
+            <li><a href="#">Yetkazib berish</a></li>
+            <li><a href="#">Qaytarish va almashtirish</a></li>
+            <li><a href="#">To'lov usullari</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
         </div>
-        <div class="aloqa">
-          <h3 class="aloqa-text">ALOQA</h3>
-          <p class="lokatsiya">Toshkent shahri, Amir Temur ko'chasi</p>
-          <p class="nomer">+998 71 123 45 67</p>
-          <div class="sot-seti">
-            <img src="./images/world-1.svg" alt="" />
-            <img src="./images/world-2.svg" alt="" />
-            <img src="./images/world-3.svg" alt="" />
-          </div>
-        </div>
-        <div class="email-card">
-          <h2 class="footer-card-text-1">NEWSLETTER</h2>
-          <p class="footer-card-text-3">
-            Yangi drop va chegirmalardan <br />
-            birinchi bo'lib xabardor bo'ling.
-          </p>
-          <div class="emails">
-            <input
-              type="text"
-              placeholder="Emailingiz"
-              class="emailingiz"
-              id="enaill"
-            />
-            <button class="ok">OK</button>
-          </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">ALOQA</h4>
+          <p class="contact-info">Toshkent sh., Amir Temur ko'chasi</p>
+          <p class="contact-info">+998 71 123 45 67</p>
+          <p class="contact-info">support@krossdrop.uz</p>
         </div>
       </div>
-      <div class="random-texts">
-        <h3 class="barcha">© 2024 KROSSDROP. Barcha huquqlar himoyalangan.</h3>
-        <div class="siyosati">
-          <h3 class="siyosati-text-1">Maxfiylik siyosati</h3>
-          <h3 class="siyosati-text-2">Foydalanish shartlari</h3>
+
+      <div class="footer-bottom">
+        <p>© 2026 KROSSDROP. Barcha huquqlar himoyalangan.</p>
+        <div class="legal-links">
+          <a href="#">Maxfiylik siyosati</a>
+          <a href="#">Foydalanish shartlari</a>
         </div>
       </div>
     </footer>
